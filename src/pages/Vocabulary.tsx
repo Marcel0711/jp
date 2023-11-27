@@ -35,7 +35,7 @@ const Vocabulary = () => {
                 ))}
             </div>
             {activeVocab !== false && (
-                <FlashCardsVocab vocabL={...data} current={current} setCurrent={setCurrent} setActive={() => setActive(false)}/>
+                <FlashCardsVocab vocabL={[...data]} current={current} setCurrent={setCurrent} setActive={() => setActive(false)}/>
             )}
             </>)}
         </>
