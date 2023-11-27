@@ -1,4 +1,4 @@
-import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom"
+import { createBrowserRouter, createRoutesFromElements, Navigate, Route, RouterProvider } from "react-router-dom"
 import Navbar from './layouts/Navbar'
 import Home from './pages/Home'
 import VocabList from "./pages/VocabList"
@@ -12,6 +12,7 @@ const router = createBrowserRouter(
       <Route path="vocabulary" element={<VocabList/>}/>
       <Route path="/vocabulary/theme/:theme" element={<Vocabulary/>}/>
       <Route path="/kanji" element={<Kanji/>}/>
+      <Route path="*" element={<Navigate to='/'/>}/>
     </Route>
   )
 )
