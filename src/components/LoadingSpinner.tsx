@@ -1,7 +1,7 @@
 const LoadingSpinner = () => {
     return ( 
         <div className="spinner">
-            <h2>日本語</h2>
+            <p>日本語</p>
         </div>
      );
 }

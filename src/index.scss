@@ -363,7 +363,7 @@ main{
     flex-direction: column;
     row-gap: 1rem;
 
-    &>div{
+    .kanji-random__box{
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
@@ -546,6 +546,11 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    p{
+        font-size: 22px;
+        font-weight: 500;
+    }
 
     ::after{
         position: absolute;
