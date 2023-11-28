@@ -11,7 +11,7 @@ const RandomKanji = () => {
             {isLoading && <LoadingSpinner/>}
             {isError && <ErrorBlock/>}
             {isSuccess && (<>
-                <div className="kanji-random_box">
+                <div className="kanji-random__box">
                     <h1>{data.kanji}</h1>
                     <div>
                         <p><span>Meaning: </span> {data.en}</p>
