@@ -14,3 +14,4 @@ https://japanese-mp.netlify.app/
 - Vocabulary grouped by topics
 - Kanji grouped by Jōyō grade
 - flashcards for both
+- darkmode
