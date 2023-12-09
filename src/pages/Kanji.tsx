@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type { Grade, Kanji } from "../types";
+import type { Grade } from "../types";
 import { useGetKanjiByGradeQuery } from "../redux/api/JapanApi";
 import LoadingSpinner from "../components/LoadingSpinner";
 import ErrorBlock from "../components/ErrorBlock";
@@ -7,13 +7,13 @@ import GradeSelector from '../components/GradeSelectors'
 import FlashCardKanji from '../components/FlashCardKanji'
 
 const Kanji = () => {
-    const [grade,setGrade] = useState<Grade>(1)
+    const [grade,setGrade] = useState<Grade>(2)
     const { data, isSuccess, isLoading, isError } = useGetKanjiByGradeQuery(grade)
     const [activeKanji, setActiveKanji] = useState<number | false>(false)
 
-    const setNewGrade = (grade: Grade) => {
+    const setNewGrade = (newGrade: Grade) => {
         setActiveKanji(false)
-        setGrade(grade)
+        setGrade(newGrade)
     }
 
     const setActive = (bool: number|false) => {

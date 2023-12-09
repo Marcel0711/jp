@@ -14,7 +14,7 @@ const GradeSelectors = ({grade, setGrade}:Props) => {
             <div>
             {grades.map((item) => (
                 <div key={item}>
-                    <input type="radio" name="grade_radio" checked={grade === item} onChange={() => setGrade(item)} id={`grade-${grade}`}/>
+                    <input type="radio" name="grade_radio" checked={grade === item} onChange={() => setGrade(item)} id={`grade-${item}`}/>
                     <label htmlFor={`grade-${item}`}>{item}</label>
                 </div>
             ))}
