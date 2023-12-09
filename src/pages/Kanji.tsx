@@ -7,7 +7,7 @@ import GradeSelector from '../components/GradeSelectors'
 import FlashCardKanji from '../components/FlashCardKanji'
 
 const Kanji = () => {
-    const [grade,setGrade] = useState<Grade>(2)
+    const [grade,setGrade] = useState<Grade>(1)
     const { data, isSuccess, isLoading, isError } = useGetKanjiByGradeQuery(grade)
     const [activeKanji, setActiveKanji] = useState<number | false>(false)
 
